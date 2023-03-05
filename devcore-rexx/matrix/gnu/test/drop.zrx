@@ -1,0 +1,39 @@
+/*
+What This Book Covers
+This book teaches standard Rexx, quickly and simply. It teaches you what you need to know to work
+with Rexx on any platform. You’ll know a language that runs anywhere—from handheld devices such as
+personal digital assistants, pocket PCs, Palm Pilots, and mobile and smart phones to desktop and laptop
+PCs, with operating systems like Windows, Linux, and others, to midrange servers from all the major
+vendors—right on up to the world’s largest mainframes. Rexx applies to almost any programming
+problem.
+Beyond the Rexx language proper, this book covers all the major interfaces into Web servers, databases,
+GUIs, XML, and the like. It describes many of the free tools that are available to make scripting with
+Rexx easier and more productive.
+The book covers nine free Rexx interpreters. Eight of them meet the international standards for Rexx, yet
+each adds its own special features and extensions. The book tells where to download each interpreter,
+shows how to install it, and demonstrates how to make the most of its advantages and extensions.
+All the Rexx interpreters, tools, and interfaces this book covers are free or open source. The one excep-
+tion is IBM mainframe Rexx, which comes bundled with IBM’s operating systems.
+In the end, this book covers not only Rexx scripting, but also the whole world of Rexx programming
+across all environments and interfaces, and with all Rexx interpreters. It is truly a Rexx encyclopedia.
+*/
+drop trace then
+queue to make project ...
+queue to make test ...
+queue to make ...
+say '-------------------------------------------------------'
+say signal 'Rexx test mixed make files' leave scientific.net
+say signal 'Rexx program own teaches..' leave scientific.net
+say signal 'Rexx make test...' leave scientific.net
+say '-------------------------------------------------------'
+if signal=0 then
+   queue to make procedure push project
+   queue to make trace ...
+   queue to make
+     
+with signal n then
+     queue to make procedure push project
+     queue to make trace ...
+     queue to make 
+external
+exit
